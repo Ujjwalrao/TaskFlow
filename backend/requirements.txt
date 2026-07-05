@@ -1,0 +1,13 @@
+Flask==3.0.3
+flask-cors==4.0.1
+sentence-transformers==2.7.0
+numpy==1.26.4
+reportlab==4.2.0
+requests==2.32.3
+gunicorn==22.0.0
+google-auth-oauthlib==1.2.1
+google-api-python-client==2.140.0
+python-dotenv==1.0.1
+pywebpush==2.0.1
+py-vapid==1.9.0
+psycopg2-binary==2.9.9

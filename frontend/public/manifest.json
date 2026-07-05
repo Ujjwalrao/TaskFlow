@@ -1,0 +1,9 @@
+{
+  "name": "TaskFlow — Personal Productivity OS",
+  "short_name": "TaskFlow",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4F46E5",
+  "icons": []
+}

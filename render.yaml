@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: taskflow-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn wsgi:app --bind 0.0.0.0:$PORT --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DATABASE_URL
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_REDIRECT_URI
+        sync: false
+      - key: OUTLOOK_CLIENT_ID
+        sync: false
+      - key: OUTLOOK_CLIENT_SECRET
+        sync: false
+      - key: OUTLOOK_TENANT_ID
+        sync: false
+      - key: NOTION_API_KEY
+        sync: false
+      - key: NOTION_DATABASE_ID
+        sync: false
+      - key: SLACK_BOT_TOKEN
+        sync: false
+      - key: SLACK_CHANNEL_ID
+        sync: false
+      - key: JIRA_SITE_URL
+        sync: false
+      - key: JIRA_EMAIL
+        sync: false
+      - key: JIRA_API_TOKEN
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: DIGEST_TO_EMAIL
+        sync: false
+      - key: DIGEST_FROM_EMAIL
+        value: onboarding@resend.dev
+    plan: free
